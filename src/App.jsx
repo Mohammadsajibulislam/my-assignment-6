@@ -5,6 +5,7 @@ import Products from './components/Products'
 import Steps from './components/Steps'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer'
+import CallToAction from './components/CallToAction'
 import { useState } from 'react'
 
 import { toast } from 'react-toastify'
@@ -49,6 +50,7 @@ const handleCheckout = () => {
       />
       <Steps />
       <Pricing />
+      <CallToAction />
       <Footer />
       <ToastContainer position="top-right" autoClose={2000} />
     </div>
