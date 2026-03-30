@@ -25,15 +25,16 @@ const Banner = () => {
         <p className="text-gray-500 text-sm">Explore Products</p>
 
         {/* Buttons */}
-        <div className="flex items-center gap-4">
-          <button className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 text-sm">
-            Explore Products
-          </button>
-          <button className="flex items-center gap-2 text-sm text-gray-600 hover:text-purple-600">
-            <img src={playImg} alt="play" className="w-8 h-8" />
-            Watch Demo
-          </button>
-        </div>
+        {/* Buttons */}
+    <div className="flex items-center gap-4">
+  <button className="bg-purple-600 text-white px-6 py-3 rounded-full hover:bg-purple-700 text-sm font-medium">
+    Explore Products
+   </button>
+   <button className="flex items-center gap-2 text-sm text-gray-700 border border-gray-300 px-6 py-3 rounded-full border-purple-600 hover:text-purple-600">
+    <img src={playImg} alt="play" className="w-5 h-5" />
+    Watch Demo
+  </button>
+    </div>
       </div>
 
       {/* Right Side - Image */}
