@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "Design Tool Pro",
+    "description": "Create stunning visuals and graphics for your brand with ease.",
+    "price": 12,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["50+ design templates", "Brand kit", "Export to PNG/SVG"],
+    "icon": "./assets/products/design-tool.png"
+  },
+  {
+    "id": 2,
+    "name": "Operations Manager",
+    "description": "Streamline your business operations and boost productivity.",
+    "price": 29,
+    "period": "monthly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Task automation", "Team collaboration", "Analytics dashboard"],
+    "icon": "./assets/products/operation.png"
+  },
+  {
+    "id": 3,
+    "name": "Portfolio Builder",
+    "description": "Build a professional portfolio website in minutes.",
+    "price": 99,
+    "period": "one-time",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["10+ portfolio themes", "Custom domain", "SEO optimized"],
+    "icon": "./assets/products/portfolio.png"
+  },
+  {
+    "id": 4,
+    "name": "Smart Cart System",
+    "description": "Complete e-commerce solution for your online store.",
+    "price": 19,
+    "period": "monthly",
+    "tag": "Popular",
+    "tagType": "popular",
+    "features": ["Unlimited products", "Payment gateway", "Order tracking"],
+    "icon": "./assets/products/shopping-cart.png"
+  },
+  {
+    "id": 5,
+    "name": "Social Media Suite",
+    "description": "Schedule, manage and analyze all your social media in one place.",
+    "price": 49,
+    "period": "yearly",
+    "tag": "Best Seller",
+    "tagType": "best seller",
+    "features": ["Auto scheduling", "5 platforms", "Engagement analytics"],
+    "icon": "./assets/products/social-media.png"
+  },
+  {
+    "id": 6,
+    "name": "AI Writing Assistant",
+    "description": "Write blogs, emails and content 10x faster with AI.",
+    "price": 15,
+    "period": "monthly",
+    "tag": "New",
+    "tagType": "new",
+    "features": ["100+ templates", "ATS optimization", "Export to PDF"],
+    "icon": "./assets/products/writing_2327400 1.png"
+  }
+]
