@@ -1,4 +1,11 @@
-[
+import designTool from './assets/products/design-tool.png'
+import operation from './assets/products/operation.png'
+import portfolio from './assets/products/portfolio.png'
+import shoppingCart from './assets/products/shopping-cart.png'
+import socialMedia from './assets/products/social-media.png'
+import writing from './assets/products/writing_2327400 1.png'
+
+const products = [
   {
     "id": 1,
     "name": "Design Tool Pro",
@@ -8,7 +15,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["50+ design templates", "Brand kit", "Export to PNG/SVG"],
-    "icon": "./assets/products/design-tool.png"
+    "icon": designTool
   },
   {
     "id": 2,
@@ -19,7 +26,7 @@
     "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Task automation", "Team collaboration", "Analytics dashboard"],
-    "icon": "./assets/products/operation.png"
+    "icon": operation
   },
   {
     "id": 3,
@@ -30,7 +37,7 @@
     "tag": "New",
     "tagType": "new",
     "features": ["10+ portfolio themes", "Custom domain", "SEO optimized"],
-    "icon": "./assets/products/portfolio.png"
+    "icon": portfolio
   },
   {
     "id": 4,
@@ -41,7 +48,7 @@
     "tag": "Popular",
     "tagType": "popular",
     "features": ["Unlimited products", "Payment gateway", "Order tracking"],
-    "icon": "./assets/products/shopping-cart.png"
+    "icon": shoppingCart
   },
   {
     "id": 5,
@@ -52,7 +59,7 @@
     "tag": "Best Seller",
     "tagType": "best seller",
     "features": ["Auto scheduling", "5 platforms", "Engagement analytics"],
-    "icon": "./assets/products/social-media.png"
+    "icon": socialMedia
   },
   {
     "id": 6,
@@ -63,6 +70,8 @@
     "tag": "New",
     "tagType": "new",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "./assets/products/writing_2327400 1.png"
+    "icon": writing
   }
 ]
+
+export default products
