@@ -1,10 +1,32 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import ProductCard from './ProductCard'
 import Cart from './Cart'
-import products from '../products.js'
+
+const iconMap = {
+  'design-tool.png': '/design-tool.png',
+  'operation.png': '/operation.png',
+  'portfolio.png': '/portfolio.png',
+  'shopping-cart.png': '/shopping-cart.png',
+  'social-media.png': '/social-media.png',
+  'writing_2327400 1.png': '/writing_2327400 1.png',
+}
 
 const Products = ({ cart, onAddToCart, onRemoveFromCart, onCheckout }) => {
   const [activeTab, setActiveTab] = useState('products')
+  const [products, setProducts] = useState([])
+
+  useEffect(() => {
+    fetch('/products.json')
+      .then(res => res.json())
+      .then(data => {
+        console.log(data)
+        const productsWithIcons = data.map(product => ({
+          ...product,
+          icon: iconMap[product.icon]
+        }))
+        setProducts(productsWithIcons)
+      })
+  }, [])
 
   return (
     <section className="py-16 px-10 max-w-6xl mx-auto">
@@ -45,12 +67,12 @@ const Products = ({ cart, onAddToCart, onRemoveFromCart, onCheckout }) => {
       {activeTab === 'products' && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {products.map(product => (
-           <ProductCard
-           key={product.id}
-           product={product}
-           onAddToCart={onAddToCart}
-           cart={cart}
-          />
+            <ProductCard
+              key={product.id}
+              product={product}
+              onAddToCart={onAddToCart}
+              cart={cart}
+            />
           ))}
         </div>
       )}
