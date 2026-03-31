@@ -2,7 +2,7 @@ import { ShoppingCart } from 'lucide-react'
 
 const Navbar = ({ cartCount }) => {
   return (
-    <nav className="flex items-center justify-between px-10 py-4 border-b border-gray-200">
+    <nav className="flex items-center justify-between px-10 py-4 border-b border-gray-200 sticky top-0 z-50 bg-white">
       {/* Logo */}
       <div className="text-2xl font-bold text-purple-600">DigiTools</div>
 

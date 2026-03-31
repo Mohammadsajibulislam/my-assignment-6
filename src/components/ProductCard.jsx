@@ -1,11 +1,19 @@
+import { useState, useEffect } from 'react'
+
 const tagColors = {
   popular: "bg-purple-100 text-purple-600",
   new: "bg-green-100 text-green-600",
   "best seller": "bg-orange-100 text-orange-600",
 }
 
-const ProductCard = ({ product, onAddToCart }) => {
+const ProductCard = ({ product, onAddToCart, cart }) => {
   const { name, description, price, period, tag, tagType, features, icon } = product
+
+  const isInCart = cart.some(item => item.id === product.id)
+
+  const handleClick = () => {
+    onAddToCart(product)
+  }
 
   return (
     <div className="border border-gray-200 rounded-2xl p-6 flex flex-col gap-4 hover:shadow-lg transition-shadow">
@@ -43,10 +51,14 @@ const ProductCard = ({ product, onAddToCart }) => {
 
       {/* Button */}
       <button
-        onClick={() => onAddToCart(product)}
-        className="mt-auto bg-purple-600 text-white py-3 rounded-full hover:bg-purple-700 text-sm font-medium"
+        onClick={handleClick}
+        className={`mt-auto py-3 rounded-full text-sm font-medium transition-all ${
+          isInCart
+            ? 'bg-green-500 text-white'
+            : 'bg-purple-600 text-white hover:bg-purple-700'
+        }`}
       >
-        Buy Now
+        {isInCart ? 'Added to Cart ✓' : 'Buy Now'}
       </button>
     </div>
   )

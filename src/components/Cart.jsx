@@ -10,12 +10,14 @@ const Cart = ({ cart, onRemoveFromCart, onCheckout }) => {
         </div>
       ) : (
         <div className="border border-gray-200 rounded-2xl p-6">
-          <h3 className="font-bold text-gray-800 text-lg mb-4">Your Cart</h3>
+          <div className="flex items-center justify-between mb-4">
+            <h3 className="font-bold text-gray-800 text-lg">Your Cart</h3>
+          </div>
 
           {/* Cart Items */}
           <div className="space-y-3">
             {cart.map(item => (
-              <div key={item.id} className="flex items-center justify-between bg-gray-50 rounded-xl p-3">
+              <div key={item.id} className="flex items-center justify-between bg-gray-50 rounded-xl p-3 border border-gray-100">
                 <div className="flex items-center gap-3">
                   <img src={item.icon} alt={item.name} className="w-10 h-10 object-contain" />
                   <div>

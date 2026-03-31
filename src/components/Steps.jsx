@@ -36,7 +36,7 @@ const Steps = () => {
           {steps.map(step => (
             <div key={step.id} className="bg-white rounded-2xl p-8 text-center relative shadow-sm">
               {/* Step Number */}
-              <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-purple-600 text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">
+              <div className="absolute top-4 right-4 bg-purple-600 text-white text-xs font-bold w-8 h-8 rounded-full flex items-center justify-center">
                 {step.id}
               </div>
 

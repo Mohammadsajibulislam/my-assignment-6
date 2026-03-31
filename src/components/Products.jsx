@@ -17,7 +17,7 @@ const Products = ({ cart, onAddToCart, onRemoveFromCart, onCheckout }) => {
         </p>
 
         {/* Toggle Buttons */}
-        <div className="flex items-center justify-center gap-4 mt-6">
+        <div className="flex items-center justify-center gap-4 mt-6 border border-gray-300 rounded-full w-max mx-auto">
           <button
             onClick={() => setActiveTab('products')}
             className={`px-6 py-2 rounded-full text-sm font-medium transition-all ${
@@ -45,11 +45,12 @@ const Products = ({ cart, onAddToCart, onRemoveFromCart, onCheckout }) => {
       {activeTab === 'products' && (
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {products.map(product => (
-            <ProductCard
-              key={product.id}
-              product={product}
-              onAddToCart={onAddToCart}
-            />
+           <ProductCard
+           key={product.id}
+           product={product}
+           onAddToCart={onAddToCart}
+           cart={cart}
+          />
           ))}
         </div>
       )}
