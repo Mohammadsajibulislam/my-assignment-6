@@ -1,22 +1,42 @@
-# 🛠️ DigiTools Platform
+# DigiTools Platform
 
-A modern digital tools marketplace built with React where users can browse, purchase, and manage premium digital products.
+> A modern digital tools marketplace where you can browse, purchase, and manage premium digital products — all in one place.
 
-🧰 Technologies Used
+## Live Site
 
-- **React.js** — UI components and state management
-- **Vite** — Fast development build tool
-- **Tailwind CSS v4** — Utility-first styling
-- **DaisyUI** — Tailwind CSS component library
-- **React-Toastify** — Toast notifications
-- **JavaScript (ES6+)** — Modern JS features
-- **JSON + Fetch API** — Dynamic product data loading
+[👉 Visit DigiTools Platform](#digitools-my-assignment-6.netlify.app)
 
-## ✨ Features
+---
 
-1. **🛒 Cart System** — Add products to cart, remove items, and proceed to checkout with real-time navbar count update.
-2. **🔔 Toast Notifications** — Beautiful notifications for add to cart, remove, and checkout actions using React-Toastify.
-3. **📦 Dynamic Product Loading** — Products are loaded dynamically from a JSON file using the Fetch API.
+## Technologies Used
+
+| Technology       | Purpose                          |
+| ---------------- | -------------------------------- |
+| React.js         | UI components & state management |
+| Vite             | Fast development build tool      |
+| Tailwind CSS v4  | Utility-first styling            |
+| DaisyUI          | Tailwind CSS component library   |
+| React-Toastify   | Toast notifications              |
+| JavaScript ES6+  | Modern JS features               |
+| JSON + Fetch API | Dynamic product data loading     |
+
+---
+
+## Key Features
+
+### 🛒 1. Smart Cart System
+
+Add products to cart, remove individual items, and proceed to checkout. Cart count updates in real-time in the navbar.
+
+### 🔔 2. Toast Notifications
+
+Beautiful notifications for every cart action — add, remove, and checkout — powered by React-Toastify.
+
+### 📦 3. Dynamic Product Loading
+
+All products are loaded dynamically from a JSON file using the Fetch API — no hardcoded data!
+
+---
 
 ## 📁 Project Structure
 
@@ -49,3 +69,18 @@ my-assignment-6/
 ├── package.json
 └── vite.config.js
 ```
+
+---
+
+## Run Locally
+
+```bash
+git clone https://github.com/Sajib1915/my-assignment-6.git
+cd my-assignment-6
+npm install
+npm run dev
+```
+
+---
+
+⭐ If you like this project, give it a star on GitHub!
