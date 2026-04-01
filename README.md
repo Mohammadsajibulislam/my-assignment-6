@@ -4,7 +4,7 @@
 
 ## Live Site
 
-[👉 Visit DigiTools Platform](#https://digitools-my-assignment-6.netlify.app/)
+[👉 Visit DigiTools Platform](https://digitools-my-assignment-6.netlify.app/)
 
 ---
 
