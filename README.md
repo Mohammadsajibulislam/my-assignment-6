@@ -4,7 +4,7 @@
 
 ## Live Site
 
-[👉 Visit DigiTools Platform](#digitools-my-assignment-6.netlify.app)
+[👉 Visit DigiTools Platform](#https://digitools-my-assignment-6.netlify.app/)
 
 ---
 
@@ -75,7 +75,7 @@ my-assignment-6/
 ## Run Locally
 
 ```bash
-git clone https://github.com/Sajib1915/my-assignment-6.git
+git clone 
 cd my-assignment-6
 npm install
 npm run dev
